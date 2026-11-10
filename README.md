@@ -100,7 +100,7 @@ These same automated tests will be incorporated into the Jenkins Continuous Inte
 
 This project, as previously mentioned, is intended to demonstrate how Jenkins can automate the integration and testing of changes submitted to a GitHub repository.
 
-The planned workflow consists of the following stages:
+The workflow consists of the following stages:
 
 1. Source Code Management: Application source code and auotmated tests are maintained in the GitHub repository.
 2. Build Trigger: A GitHub webhook notifies Jenkins when a build should begin.
@@ -109,7 +109,7 @@ The planned workflow consists of the following stages:
 5. Automated Testing: Jenkins runs the Python unit test suite and evaluates the results.
 6. Build Reporting: Jenkins records the console output and marks the build as either successful or failed based on the results of the tests.
 
-Once configured, this workflow will be tested using successful builds, intentional test failures, and recovery builds to demonstrate that Jenkins correctly detects and reports changes in application behavior.
+This workflow has been tested using successful builds, intentional test failures, and recovery builds to demonstrate that Jenkins correctly detects and reports changes in application behavior.
 
 ## Security Considerations
 
