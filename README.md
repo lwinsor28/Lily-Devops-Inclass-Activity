@@ -22,32 +22,32 @@ The repository is organized as follow:
 ### Application & Testing
 
 #### Python 3
-    Programming language used to implement the sample application and its associated test cases.
+Programming language used to implement the sample application and its associated test cases.
 
 #### unittest
-    Python's built-in unit testing framework, used to define, execute, and evaluate automated tests without requiring additional testing libraries.
+Python's built-in unit testing framework, used to define, execute, and evaluate automated tests without requiring additional testing libraries.
 
 ### Continuous Integration and Version Control
 
 #### Git
-    Version control system used to track changes to the application's source code, tests, and documentation.
+Version control system used to track changes to the application's source code, tests, and documentation.
 
 #### GitHub
-    Remote repository hosting service used to store the project and provide Jenkins with access to the latest committed source code.
+Remote repository hosting service used to store the project and provide Jenkins with access to the latest committed source code.
 
 #### Jenkins
-    Automation server used to implement the Continuous Integration workflow. Jenkins will retrieve the repository, execute build and test commands, and report the results of each build.
+Automation server used to implement the Continuous Integration workflow. Jenkins will retrieve the repository, execute build and test commands, and report the results of each build.
 
 ### Development Environment
 
 #### Visual Studio Code
-    Code editor used to develop, organize, and maintain the application and its automated tests.
+Code editor used to develop, organize, and maintain the application and its automated tests.
 
 #### Windows 11
-    Operating system used for local development and hosting the Jenkins automation server.
+Operating system used for local development and hosting the Jenkins automation server.
 
 #### Eclipse Temurin JDK 21
-    Java Development Kit used to support the Jenkins runtime environment.
+Java Development Kit used to support the Jenkins runtime environment.
 
 ## Prerequisites
 
@@ -71,10 +71,10 @@ Assuming the prerequisites have been met, the sample application can be executed
 5. Execute the application:
     `python app.py`
 6. The application should produce the following output:
-    ```
-    All systems go! Application started!
-    2 + 3 = 5
-    ```
+ ```
+All systems go! Application started!
+2 + 3 = 5
+```
 This confirms that the sample application has executed successfully.
 
 ## How to Run the Automated Tests
@@ -87,11 +87,11 @@ The project's automated tests use Python's built-in unittest framework and do no
     `python -m unittest discover -s tests -v`
 4. Python will discover the test cases located in the tests directory, execute each test, and compare the actual results against their expected values.
 5. If both test cases pass, the terminal should display a summary similar to:
-    ```
-    Ran 2 tests
+```
+Ran 2 tests
 
-    OK
-    ```
+ OK
+```
 6. If a test fails, the framework will report the failed assertion and provide additional informaiton to help identify the problem.
 
 These same automated tests will be incorporated into the Jenkins Continuous Integration workflow.
